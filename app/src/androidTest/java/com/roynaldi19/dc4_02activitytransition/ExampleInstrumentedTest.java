@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.myrecyclerview;
+package com.roynaldi19.dc4_02activitytransition;
 
 import android.content.Context;
 

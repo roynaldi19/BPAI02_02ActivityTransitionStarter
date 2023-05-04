@@ -1,1 +1,2 @@
+rootProject.name = "DC4_02ActivityTransition"
 include ':app'

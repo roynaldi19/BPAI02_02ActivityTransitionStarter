@@ -1,10 +1,10 @@
-package com.dicoding.picodiploma.myrecyclerview
+package com.roynaldi19.dc4_02activitytransition
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import com.bumptech.glide.Glide
-import com.dicoding.picodiploma.myrecyclerview.model.Hero
+import com.roynaldi19.dc4_02activitytransition.model.Hero
 
 class HeroActivity : AppCompatActivity() {
 

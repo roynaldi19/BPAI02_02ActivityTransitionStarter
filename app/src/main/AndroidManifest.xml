@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dicoding.picodiploma.myrecyclerview">
+    package="com.roynaldi19.dc4_02activitytransition">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,9 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyRecyclerView">
         <activity
-            android:name=".HeroActivity"
+            android:name="com.roynaldi19.dc4_02activitytransition.HeroActivity"
             android:exported="false" />
-        <activity android:name=".MainActivity"
+        <activity android:name="com.roynaldi19.dc4_02activitytransition.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

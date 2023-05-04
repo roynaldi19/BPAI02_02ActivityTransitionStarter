@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.myrecyclerview
+package com.roynaldi19.dc4_02activitytransition
 
 import android.content.res.Configuration
 import android.os.Bundle
@@ -6,8 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.dicoding.picodiploma.myrecyclerview.adapter.ListHeroAdapter
-import com.dicoding.picodiploma.myrecyclerview.model.Hero
+import com.roynaldi19.dc4_02activitytransition.adapter.ListHeroAdapter
+import com.roynaldi19.dc4_02activitytransition.model.Hero
 import java.util.*
 
 class MainActivity : AppCompatActivity() {

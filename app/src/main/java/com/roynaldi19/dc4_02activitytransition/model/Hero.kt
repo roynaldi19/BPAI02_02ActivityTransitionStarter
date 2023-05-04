@@ -1,12 +1,7 @@
-package com.dicoding.picodiploma.myrecyclerview.model
+package com.roynaldi19.dc4_02activitytransition.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
-
-
-/**
- * Created by sidiqpermana on 10/29/16.
- */
 
 @Parcelize
 data class Hero(

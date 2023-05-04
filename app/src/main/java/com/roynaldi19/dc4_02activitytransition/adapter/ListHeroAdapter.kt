@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.myrecyclerview.adapter
+package com.roynaldi19.dc4_02activitytransition.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -8,16 +8,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.dicoding.picodiploma.myrecyclerview.HeroActivity
-import com.dicoding.picodiploma.myrecyclerview.R
-import com.dicoding.picodiploma.myrecyclerview.model.Hero
+import com.roynaldi19.dc4_02activitytransition.HeroActivity
+import com.roynaldi19.dc4_02activitytransition.model.Hero
 import android.app.Activity
 import androidx.core.app.ActivityOptionsCompat
 import androidx.core.util.Pair
-
-/**
- * Created by sidiqpermana on 10/28/16.
- */
+import com.roynaldi19.dc4_02activitytransition.R
 
 class ListHeroAdapter(private val listHero: ArrayList<Hero>) : RecyclerView.Adapter<ListHeroAdapter.ListViewHolder>() {
 
