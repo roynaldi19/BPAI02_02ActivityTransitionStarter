@@ -5,21 +5,20 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.roynaldi19.dc4_02activitytransition.adapter.ListHeroAdapter
+import com.roynaldi19.dc4_02activitytransition.databinding.ActivityMainBinding
 import com.roynaldi19.dc4_02activitytransition.model.Hero
-import java.util.*
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var rvHeroes: RecyclerView
+    private lateinit var binding: ActivityMainBinding
     private val list = ArrayList<Hero>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        rvHeroes = findViewById(R.id.rv_heroes)
-        rvHeroes.setHasFixedSize(true)
+        binding.rvHeroes.setHasFixedSize(true)
 
         list.addAll(listHeroes)
         showRecyclerList()
@@ -27,12 +26,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun showRecyclerList() {
         if (applicationContext.resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            rvHeroes.layoutManager = GridLayoutManager(this, 2)
+            binding.rvHeroes.layoutManager = GridLayoutManager(this, 2)
         } else {
-            rvHeroes.layoutManager = LinearLayoutManager(this)
+            binding.rvHeroes.layoutManager = LinearLayoutManager(this)
         }
         val listHeroAdapter = ListHeroAdapter(list)
-        rvHeroes.adapter = listHeroAdapter
+        binding.rvHeroes.adapter = listHeroAdapter
     }
 
     private val listHeroes: ArrayList<Hero>

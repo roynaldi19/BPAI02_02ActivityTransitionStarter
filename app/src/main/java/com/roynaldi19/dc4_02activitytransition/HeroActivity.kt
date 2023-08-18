@@ -4,13 +4,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import com.bumptech.glide.Glide
+import com.roynaldi19.dc4_02activitytransition.databinding.ActivityHeroBinding
 import com.roynaldi19.dc4_02activitytransition.model.Hero
 
 class HeroActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityHeroBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_hero)
+        binding = ActivityHeroBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         setupData()
     }
 
@@ -20,7 +23,7 @@ class HeroActivity : AppCompatActivity() {
             .load(hero.photo)
             .circleCrop()
             .into(findViewById(R.id.profileImageView))
-        findViewById<TextView>(R.id.nameTextView).text = hero.name
-        findViewById<TextView>(R.id.descTextView).text = hero.description
+        binding.nameTextView.text= hero.name
+        binding.descTextView.text = hero.description
     }
 }
